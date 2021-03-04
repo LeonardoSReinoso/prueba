@@ -7,9 +7,14 @@ pipeline {
 			}
 		}
         stage('Build') {
-            steps {
+            steps{
                 sh 'echo "Hello world!"'
             }
         }
+		stage('Upload artifact'){
+			steps{
+				sh 'echo "subiendo artefacto"'
+			}
+		}
     }
 }
